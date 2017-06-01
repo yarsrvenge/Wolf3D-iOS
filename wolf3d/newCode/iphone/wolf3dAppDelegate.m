@@ -40,7 +40,13 @@ void vibrateDevice() {
 @synthesize glView;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-	application.statusBarHidden = YES;
+    NSArray *windows = [[UIApplication sharedApplication] windows];
+    UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    //self.window.rootViewController = vc;
+    [window setRootViewController:vc];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    application.statusBarHidden = YES;
 	application.statusBarOrientation = UIInterfaceOrientationLandscapeLeft;
 	
 	// get the documents directory, where we will write configs and save games
@@ -62,7 +68,7 @@ void vibrateDevice() {
 	accelerometer.delegate = self;
 	accelerometer.updateInterval = 0.01;
 
-	// do all the game startup work
+    // do all the game startup work
 	iphoneStartup();
 }
 

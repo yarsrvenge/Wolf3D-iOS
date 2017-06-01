@@ -93,6 +93,10 @@
 		72935BA00F6B2D9D0085DD28 /* wavfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 72935B6E0F6B2D9D0085DD28 /* wavfile.c */; };
 		72935BA20F6B2D9D0085DD28 /* zmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 72935B720F6B2D9D0085DD28 /* zmem.c */; };
 		72A7E8F70F5F2063005B83C0 /* iphone_menus.c in Sources */ = {isa = PBXBuildFile; fileRef = 72A7E8F60F5F2063005B83C0 /* iphone_menus.c */; };
+		C54AED021EDF7944009DE796 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54AED011EDF7944009DE796 /* Default-568h@2x.png */; };
+		C54AED041EDF7A82009DE796 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54AED031EDF7A82009DE796 /* Images.xcassets */; };
+		C54AED121EDF82A6009DE796 /* rootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54AED111EDF82A6009DE796 /* rootViewController.xib */; };
+		C54DEE1F1EDF6A9800AE87D1 /* base in Resources */ = {isa = PBXBuildFile; fileRef = C54DEE1E1EDF6A9800AE87D1 /* base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +257,10 @@
 		72A7E8F30F5F2001005B83C0 /* iphone_wolf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_wolf.h; sourceTree = "<group>"; };
 		72A7E8F60F5F2063005B83C0 /* iphone_menus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_menus.c; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54AED011EDF7944009DE796 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C54AED031EDF7A82009DE796 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wolf3d/Images.xcassets; sourceTree = "<group>"; };
+		C54AED111EDF82A6009DE796 /* rootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rootViewController.xib; sourceTree = "<group>"; };
+		C54DEE1E1EDF6A9800AE87D1 /* base */ = {isa = PBXFileReference; lastKnownFileType = folder; path = base; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +293,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C54AED011EDF7944009DE796 /* Default-568h@2x.png */,
+				C54DEE1E1EDF6A9800AE87D1 /* base */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -319,11 +329,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C54AED031EDF7A82009DE796 /* Images.xcassets */,
 				43AE7CAA0F61FB0E00B2F562 /* wolf3dEpisode1_icon.png */,
 				43CF02FE0F56974E00E4A23D /* Default.png */,
 				43CF02EC0F56955F00E4A23D /* wolf3d_icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				C54AED111EDF82A6009DE796 /* rootViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -503,7 +515,6 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				435F41A90F532CA300887552 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -519,9 +530,15 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "wolf3d" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,30 +554,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				C54AED041EDF7A82009DE796 /* Images.xcassets in Resources */,
+				C54AED121EDF82A6009DE796 /* rootViewController.xib in Resources */,
 				43CF02ED0F56955F00E4A23D /* wolf3d_icon.png in Resources */,
 				43CF02FF0F56974E00E4A23D /* Default.png in Resources */,
+				C54DEE1F1EDF6A9800AE87D1 /* base in Resources */,
 				4364BF3F0F5CB25900F29317 /* dist.plist in Resources */,
+				C54AED021EDF7944009DE796 /* Default-568h@2x.png in Resources */,
 				43AE7CAB0F61FB0E00B2F562 /* wolf3dEpisode1_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		435F41A90F532CA300887552 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh -x";
-			shellScript = "PBXCP=${DEVELOPER_DIR}/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp\n${PBXCP} -exclude .svn \"${PROJECT_DIR}/../../base\" \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -651,8 +656,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cass Everitt";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z5MYM686HP;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -660,9 +666,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = com.idsoftware;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "242E7162-329E-4733-B361-E893AB528543";
+				PROVISIONING_PROFILE_SPECIFIER = "Gus Development Profile";
 			};
 			name = Debug;
 		};
@@ -670,32 +677,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Carmack";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Z5MYM686HP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = wolf3d_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = com.idsoftware;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "329BF7D2-0B30-4F7B-9204-EB2CBD012BA8";
+				PROVISIONING_PROFILE_SPECIFIER = "Gus Development Profile";
 			};
 			name = Release;
 		};
 		4364BF480F5CB27300F29317 /* AdHocDist */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_ENTITLEMENTS = dist.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cass Everitt";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2E91433-8CD1-46DB-9DC5-B7E4C84FD1C2";
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos;
 			};
 			name = AdHocDist;
 		};
@@ -703,30 +713,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: id Software";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Z5MYM686HP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = wolf3d_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = nu.r3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
+				PROVISIONING_PROFILE_SPECIFIER = "Gus Development Profile";
 			};
 			name = AdHocDist;
 		};
 		43AE7CA40F61EC4E00B2F562 /* ReleaseEpisode1 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos;
 			};
 			name = ReleaseEpisode1;
 		};
@@ -734,8 +747,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Carmack";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Z5MYM686HP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = wolf3d_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -744,23 +758,25 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = wolf3dEpisode1;
 				PROFILE_PREFIX = com.idsoftware;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "329BF7D2-0B30-4F7B-9204-EB2CBD012BA8";
+				PROVISIONING_PROFILE_SPECIFIER = "Gus Development Profile";
 			};
 			name = ReleaseEpisode1;
 		};
 		43AE7CAE0F61FC9200B2F562 /* DebugEpisode1 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos;
 			};
 			name = DebugEpisode1;
 		};
@@ -768,8 +784,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Carmack";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z5MYM686HP;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -780,37 +797,40 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = wolf3dEpisode1;
 				PROFILE_PREFIX = com.idsoftware;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "329BF7D2-0B30-4F7B-9204-EB2CBD012BA8";
+				PROVISIONING_PROFILE_SPECIFIER = "Gus Development Profile";
 			};
 			name = DebugEpisode1;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
